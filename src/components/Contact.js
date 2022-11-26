@@ -35,7 +35,7 @@ export const Contact = ({ language }) => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = /*async (e)*/ () => {
     e.preventDefault();
 
     let namesRegExp = /^([a-zA-ZùÙüÜäàáëèéïìíöòóüùúÄÀÁËÈÉÏÌÍÖÒÓÜÚñÑ\s]+)$/;

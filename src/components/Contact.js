@@ -87,8 +87,9 @@ export const Contact = ({ language }) => {
       });
       return;
     }
-
-    if (language === "english") {
+      //SERVER.JS nodemailer config
+      
+   /* if (language === "english") {
       setButtonText("Sending...");
     } else {
       setButtonText("Enviando...");
@@ -116,7 +117,7 @@ export const Contact = ({ language }) => {
         message: "Something went wrong, please try again later",
         message2: "Algo salió mal, por favor intente más tarde",
       });
-    }
+    } */
   };
 
   return (
@@ -131,7 +132,7 @@ export const Contact = ({ language }) => {
               <h2 className="d-flex justify-content-center">
                 {language === "english" ? "Get in Touch" : "Contacto"}
               </h2>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} method="POST" data-netlify="true">
                 <Row>
                   <Col size={12} sm={6} className="px-1">
                     <input

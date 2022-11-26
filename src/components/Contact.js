@@ -88,7 +88,7 @@ export const Contact = ({ language }) => {
       return;
     }
       //SERVER.JS nodemailer config
-      
+
    /* if (language === "english") {
       setButtonText("Sending...");
     } else {
@@ -132,7 +132,7 @@ export const Contact = ({ language }) => {
               <h2 className="d-flex justify-content-center">
                 {language === "english" ? "Get in Touch" : "Contacto"}
               </h2>
-              <form onSubmit={handleSubmit} method="POST" data-netlify="true">
+              <form method="POST" data-netlify="true">
                 <Row>
                   <Col size={12} sm={6} className="px-1">
                     <input

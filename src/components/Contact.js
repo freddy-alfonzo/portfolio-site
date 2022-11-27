@@ -133,67 +133,70 @@ export const Contact = ({ language }) => {
               <h2 className="d-flex justify-content-center">
                 {language === "english" ? "Get in Touch" : "Contacto"}
               </h2>
-              <form /*onSubmit={handleSubmit}*/ name="contact" method="POST" data-netlify="true">
+              <form /*onSubmit={handleSubmit}*/ name="contact" action="/contact" method="POST" data-netlify="true">
                 <Row>
                   <Col size={12} sm={6} className="px-1">
                     <input
-                      type="email"
+                      type="text"
                       name="firstName"
-                      value={formDetails.firstName}
+                      required
+                      //value={formDetails.firstName}
                       placeholder={
                         language === "english" ? "First name" : "Nombre"
                       }
-                      onChange={(e) =>
-                        onFormUpdate("firstName", e.target.value)
-                      }
+                      //onChange={(e) => onFormUpdate("firstName", e.target.value)}
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
                     <input
                       type="text"
-                      value={formDetails.lastName}
+                      //value={formDetails.lastName}
                       name="lastName"
+                      required
                       placeholder={
                         language === "english" ? "Last name" : "Apellido"
                       }
-                      onChange={(e) => onFormUpdate("lastName", e.target.value)}
+                      //onChange={(e) => onFormUpdate("lastName", e.target.value)}
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
                     <input
-                      type="text"
+                      type="email"
                       name="email"
-                      value={formDetails.email}
+                      required
+                     // value={formDetails.email}
                       placeholder={
                         language === "english"
                           ? "Email Address"
                           : "Correo Eléctronico"
                       }
-                      onChange={(e) => onFormUpdate("email", e.target.value)}
+                      //onChange={(e) => onFormUpdate("email", e.target.value)}
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
                     <input
-                      type="tel"
+                      type="number"
                       name="phone"
-                      value={formDetails.phone}
+                      required
+                      //value={formDetails.phone}
                       placeholder={
                         language === "english"
                           ? "Phone number"
                           : "Número de Teléfono"
                       }
-                      onChange={(e) => onFormUpdate("phone", e.target.value)}
+                      //onChange={(e) => onFormUpdate("phone", e.target.value)}
                     />
                   </Col>
                   <Col size={12} sm={12} className="px-1">
                     <textarea
                       rows="6"
-                      value={formDetails.message}
+                      //value={formDetails.message}
                       name="message"
+                      required
                       placeholder={
                         language === "english" ? "Message" : "Mensaje"
                       }
-                      onChange={(e) => onFormUpdate("message", e.target.value)}
+                      //onChange={(e) => onFormUpdate("message", e.target.value)}
                     ></textarea>
                   </Col>
                   <Col size={12} sm={12}>

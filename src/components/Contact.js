@@ -133,11 +133,11 @@ export const Contact = ({ language }) => {
               <h2 className="d-flex justify-content-center">
                 {language === "english" ? "Get in Touch" : "Contacto"}
               </h2>
-              <form /*onSubmit={handleSubmit}*/ method="POST" data-netlify="true">
+              <form /*onSubmit={handleSubmit}*/ name="contact" method="POST" data-netlify="true">
                 <Row>
                   <Col size={12} sm={6} className="px-1">
                     <input
-                      type="text"
+                      type="email"
                       name="firstName"
                       value={formDetails.firstName}
                       placeholder={

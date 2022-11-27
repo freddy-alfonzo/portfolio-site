@@ -35,7 +35,9 @@ export const Contact = ({ language }) => {
     });
   };
 
-  const handleSubmit = /*async (e)*/ (e) => {
+  //server.js code
+/*
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     let namesRegExp = /^([a-zA-ZùÙüÜäàáëèéïìíöòóüùúÄÀÁËÈÉÏÌÍÖÒÓÜÚñÑ\s]+)$/;
@@ -87,9 +89,8 @@ export const Contact = ({ language }) => {
       });
       return;
     }
-      //SERVER.JS nodemailer config
-      
-   /* if (language === "english") {
+
+    if (language === "english") {
       setButtonText("Sending...");
     } else {
       setButtonText("Enviando...");
@@ -117,8 +118,8 @@ export const Contact = ({ language }) => {
         message: "Something went wrong, please try again later",
         message2: "Algo salió mal, por favor intente más tarde",
       });
-    } */
-  };
+    }
+  }; */ 
 
   return (
     <section className="contact" id="contact">
@@ -132,11 +133,12 @@ export const Contact = ({ language }) => {
               <h2 className="d-flex justify-content-center">
                 {language === "english" ? "Get in Touch" : "Contacto"}
               </h2>
-              <form onSubmit={handleSubmit} method="POST" data-netlify="true">
+              <form /*onSubmit={handleSubmit}*/ method="POST" data-netlify="true">
                 <Row>
                   <Col size={12} sm={6} className="px-1">
                     <input
                       type="text"
+                      name="firstName"
                       value={formDetails.firstName}
                       placeholder={
                         language === "english" ? "First name" : "Nombre"
@@ -150,6 +152,7 @@ export const Contact = ({ language }) => {
                     <input
                       type="text"
                       value={formDetails.lastName}
+                      name="lastName"
                       placeholder={
                         language === "english" ? "Last name" : "Apellido"
                       }
@@ -159,6 +162,7 @@ export const Contact = ({ language }) => {
                   <Col size={12} sm={6} className="px-1">
                     <input
                       type="text"
+                      name="email"
                       value={formDetails.email}
                       placeholder={
                         language === "english"
@@ -171,6 +175,7 @@ export const Contact = ({ language }) => {
                   <Col size={12} sm={6} className="px-1">
                     <input
                       type="tel"
+                      name="phone"
                       value={formDetails.phone}
                       placeholder={
                         language === "english"
@@ -184,6 +189,7 @@ export const Contact = ({ language }) => {
                     <textarea
                       rows="6"
                       value={formDetails.message}
+                      name="message"
                       placeholder={
                         language === "english" ? "Message" : "Mensaje"
                       }

@@ -134,6 +134,7 @@ export const Contact = ({ language }) => {
                 {language === "english" ? "Get in Touch" : "Contacto"}
               </h2>
               <form /*onSubmit={handleSubmit}*/ name="contact" action="/contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact"/>
                 <Row>
                   <Col size={12} sm={6} className="px-1">
                     <input

@@ -9,10 +9,20 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
           <h4>{title}</h4>
           <span>{description}</span>
           <br></br>
-          <a className="tagline my-2" href="#projects">
+          <a
+            className="tagline my-2"
+            href="https://xayavpn.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
             See page
           </a>
-          <a className="tagline" href="#projects">
+          <a
+            className="tagline"
+            href="https://github.com/freddy-alfonzo/vpn-landing-page"
+            target="_blank"
+            rel="noreferrer"
+          >
             Repository
           </a>
         </div>

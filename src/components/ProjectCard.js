@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, description, imgUrl, link, repository, target="" }) => {
   return (
     <Col size={12} sm={12} md={6}>
       <div className="proj-imgbx">
@@ -11,16 +11,16 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
           <br></br>
           <a
             className="tagline my-2"
-            href="https://xayavpn.netlify.app"
-            target="_blank"
+            href={link}
+            target={target}
             rel="noreferrer"
           >
             See page
           </a>
           <a
             className="tagline"
-            href="https://github.com/freddy-alfonzo/vpn-landing-page"
-            target="_blank"
+            href={repository}
+            target={target}
             rel="noreferrer"
           >
             Repository

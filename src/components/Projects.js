@@ -13,24 +13,34 @@ export function Projects({ language }) {
           description:
             "Mordern landing page for a VPN company that wants to sell its product",
           imgUrl: projImg1,
+          link: "https://xayavpn.netlify.app",
+          repository: "https://github.com/freddy-alfonzo/vpn-landing-page",
+          target: "_blank"
         },
         {
           title: "Spotify clone",
           description:
             "Clone of spotify app consuming an music API and same functionalities",
           imgUrl: projImg,
+          link: "#projects",
+          repository: "#projects"
         },
         {
           title: "Movies App",
           description:
             "A movies app consuming an API where you can find all movies and trailers",
           imgUrl: projImg,
+          link: "#projects",
+          repository: "#projects"
         },
         {
           title: "Weather app",
           description:
             "Weather app that tracks your location or allow you to search for any other location",
           imgUrl: projImg,
+          link: "#projects",
+          repository: "#projects",
+          
         },
       ];
     } else {
@@ -40,23 +50,33 @@ export function Projects({ language }) {
           description:
             "Pagina moderna para una compañia que ofrece servicios VPN y busca promocionarse",
           imgUrl: projImg1,
+          link: "https://xayavpn.netlify.app",
+          repository: "https://github.com/freddy-alfonzo/vpn-landing-page",
+          target: "_blank"
+          
         },
         {
           title: "Clon de Spotify",
           description: `Clon de la aplicación de música "Spotify" con todas sus funcionalidades`,
           imgUrl: projImg,
+          link: "#projects",
+          repository: "#projects"
         },
         {
           title: "Aplicación de Películas",
           description:
             "Aplicación donde puedes encontrar todas las películas y sus trailers",
           imgUrl: projImg,
+          link: "#projects",
+          repository: "#projects"
         },
         {
           title: "Aplicación del Clima",
           description:
             "Aplicación que accede a tu ubicación o te permite buscar en cualquier parte del mundo",
           imgUrl: projImg,
+          link: "#projects",
+          repository: "#projects"
         },
       ];
     }

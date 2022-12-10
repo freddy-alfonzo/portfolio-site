@@ -98,7 +98,7 @@ export function Projects({ language }) {
           </Col>
 
           {projects.map((project, index) => {
-            return <ProjectCard key={index} {...project} />;
+            return <ProjectCard key={index} language={language} {...project} />;
           })}
         </Row>
       </Container>

@@ -11,6 +11,7 @@ import javascript from "../assets/img/javascript.svg";
 import bootstrap from "../assets/img/bootstrap.svg";
 import tailwind from "../assets/img/tailwind.png";
 import git from "../assets/img/git.svg";
+import redux from "../assets/img/redux.svg";
 
 export function Skills({ language }) {
   const responsive = {
@@ -74,6 +75,10 @@ export function Skills({ language }) {
                   <h5>React</h5>
                 </div>
                 <div className="item">
+                  <img src={redux} alt="redux svg"></img>
+                  <h5>Redux Toolkit</h5>
+                </div>
+                <div className="item">
                   <img src={bootstrap} alt="bootstrap svg"></img>
                   <h5>Bootstrap</h5>
                 </div>
@@ -85,7 +90,7 @@ export function Skills({ language }) {
                   <img src={git} alt="git svg"></img>
                   <h5> GIT</h5>
                 </div>
-              </Carousel>
+                              </Carousel>
             </div>
           </Col>
         </Row>

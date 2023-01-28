@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg from "../assets/img/project-img.jpg";
 import projImg1 from "../assets/img/project-img1.png";
+import projImg3 from "../assets/img/project-img3.jpg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export function Projects({ language }) {
@@ -20,18 +21,19 @@ export function Projects({ language }) {
         {
           title: "Spotify clone",
           description:
-            "Clone of spotify app consuming an music API and same functionalities",
+            "Clone of spotify app consuming an music API where you can play any music, see top charts, top songs around you, artist details page and song details page with lyrics and related songs",
           imgUrl: projImg,
           link: "#projects",
           repository: "#projects"
         },
         {
-          title: "Movies App",
+          title: "TrailerAddict App",
           description:
-            "A movies app consuming an API where you can find all movies and trailers",
-          imgUrl: projImg,
-          link: "#projects",
-          repository: "#projects"
+            "A Trailer app that shows you the video trailer, description, release date and more about any movie or tv show using TMDB API",
+          imgUrl: projImg3,
+          link: "https://trailer-addict.netlify.app",
+          repository: "https://github.com/freddy-alfonzo/trailer-addict",
+          target: "_blank"
         },
         {
           title: "Weather app",
@@ -57,18 +59,19 @@ export function Projects({ language }) {
         },
         {
           title: "Clon de Spotify",
-          description: `Clon de la aplicación de música "Spotify" con todas sus funcionalidades`,
+          description: `Clon de la app de Spotify utilizando un API de musica, en esta app puedes reproducir cualquier cancion, ver los artistas o las canciones populares del momento, el top de canciones alrededor de ti, paginas individuales para cada artista y cada cancion con sus letras.`,
           imgUrl: projImg,
           link: "#projects",
           repository: "#projects"
         },
         {
-          title: "Aplicación de Películas",
+          title: "TrailerAddict App",
           description:
-            "Aplicación donde puedes encontrar todas las películas y sus trailers",
-          imgUrl: projImg,
-          link: "#projects",
-          repository: "#projects"
+            "Aplicación donde puedes encontrar todas las películas o series con su trailer,  su descripcion y la fecha de estreno utilizando el API de TMDB",
+          imgUrl: projImg3,
+          link: "https://trailer-addict.netlify.app",
+          repository: "https://github.com/freddy-alfonzo/trailer-addict",
+          target: "_blank"
         },
         {
           title: "Aplicación del Clima",

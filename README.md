@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App]
+https://freddyalfonzo.netlify.app
 
 You can clone this repository, go to that folder with the terminal, write "npm start" and see it on localhost:3000
 

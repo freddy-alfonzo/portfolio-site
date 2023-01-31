@@ -45,8 +45,8 @@ export function Skills({ language }) {
               <h2>{language === "english" ? "Skills" : "Tecnologías"}</h2>
               <p>
                 {language === "english"
-                  ? "These are the technologies i have experience with and the ones that i used on my portfolio"
-                  : "Estas son las tecnologías con las que tengo experiencia y he usado en mi portafolio"}
+                  ? "These are the technologies i have experience with and the ones that i used on my projects/portfolio"
+                  : "Estas son las tecnologías con las que tengo experiencia y he usado en mis proyectos/portafolio"}
               </p>
               <Carousel
                 responsive={responsive}

@@ -1,7 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg from "../assets/img/project-img.jpg";
-import projImg1 from "../assets/img/project-img1.png";
+import projImg1 from "../assets/img/project-img1.jpg";
+import projImg2 from "../assets/img/project-img2.png"
 import projImg3 from "../assets/img/project-img3.jpg";
 import projImg4 from "../assets/img/project-img4.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -20,12 +21,13 @@ export function Projects({ language }) {
           target: "_blank",
         },
         {
-          title: "Spotify clone",
+          title: "Youtube clone",
           description:
-            "Clone of spotify app consuming an music API where you can play any music, see top charts, top songs around you, artist details page and song details page with lyrics and related songs",
-          imgUrl: projImg,
-          link: "#projects",
-          repository: "#projects",
+            "Clone of Youtube app where you can watch any video, search for channels and their content, or explore the feed",
+          imgUrl: projImg2,
+          link: "https://freddy-youtube.netlify.app",
+          repository: "https://github.com/freddy-alfonzo/youtube",
+          target: "_blank",
         },
         {
           title: "TrailerAddict App",
@@ -58,11 +60,12 @@ export function Projects({ language }) {
           target: "_blank",
         },
         {
-          title: "Clon de Spotify",
-          description: `Clon de la app de Spotify utilizando un API de musica, en esta app puedes reproducir cualquier cancion, ver los artistas o las canciones populares del momento, el top de canciones alrededor de ti, paginas individuales para cada artista y cada cancion con sus letras.`,
-          imgUrl: projImg,
-          link: "#projects",
-          repository: "#projects",
+          title: "Clon de Youtube",
+          description: `Clon de Youtube utilizando su API, en esta app puedes reproducir cualquier video, buscar canales y su contenido o explorar el feed`,
+          imgUrl: projImg2,
+          link: "https://freddy-youtube.netlify.app",
+          repository: "https://github.com/freddy-alfonzo/youtube",
+          target: "_blank",
         },
         {
           title: "TrailerAddict App",

@@ -180,18 +180,8 @@ a#basic-nav-dropdown.dropdown-toggle.nav-link {
   text-align: justify;
 }
 .banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
+  margin-top: -230px !important;
+  max-width: 636px;
 }
 span.wrap {
   border-right: 0.08em solid #666;
@@ -461,11 +451,15 @@ span.wrap {
     max-width: 100%;
     padding: 0 150px;
   }
+  
 }
 
 @media (max-width: 1199px) {
   .banner {
     padding: 150px 0 100px 0;
+  }
+  .banner img{
+    margin-top: -100px !important;
   }
 }
 
@@ -527,6 +521,9 @@ span.wrap {
 @media (max-width: 575px) {
   .banner h1 {
     font-size: 22px;
+  }
+  .banner img{
+    margin-top: -50px !important;
   }
 }
 

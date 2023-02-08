@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/banner.webp";
 
 export function Banner({ language }) {
   const [isDeleting, setIsDeleting] = useState(false);
@@ -68,8 +68,8 @@ export function Banner({ language }) {
               </p>
             </article>
           </Col>
-          <Col xs={12} md={12} lg={5} xl={6} className="my-lg-5 my-xl-0">
-            <img src={headerImg} alt="headerImg" className="my-lg-5 my-xl-0" />
+          <Col xs={12} md={12} lg={5} xl={6} className="mt-lg-5">
+            <img src={headerImg} alt="headerImg" className="ms-lg-5" />
           </Col>
         </Row>
       </Container>

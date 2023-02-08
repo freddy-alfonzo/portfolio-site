@@ -14,7 +14,7 @@ export function Projects({ language }) {
         {
           title: "VPN Landing Page",
           description:
-            "Mordern landing page for a VPN company that wants to sell its product",
+            "Modern landing page for a VPN company that wants to sell its product",
           imgUrl: projImg1,
           link: "https://xayavpn.netlify.app",
           repository: "https://github.com/freddy-alfonzo/vpn-landing-page",
@@ -23,7 +23,7 @@ export function Projects({ language }) {
         {
           title: "Youtube clone",
           description:
-            "Clone of Youtube app where you can watch any video, search for channels and their content, or explore the feed",
+            "Clone of Youtube app using the Youtuve V3 API where you can watch any video, explore the feed or search for channels and their content",
           imgUrl: projImg2,
           link: "https://freddy-youtube.netlify.app",
           repository: "https://github.com/freddy-alfonzo/youtube",
@@ -41,7 +41,7 @@ export function Projects({ language }) {
         {
           title: "Weather app",
           description:
-            "Weather app that tracks your location or allow you to search for any other location",
+            "Weather app that tracks your location, allows you to search for any other location, gives you a 5 day weather forecast, humidity, wind status and more",
           imgUrl: projImg4,
           link: "https://freddy-weather.netlify.app",
           repository: "https://github.com/freddy-alfonzo/weather-app",
@@ -61,7 +61,7 @@ export function Projects({ language }) {
         },
         {
           title: "Clon de Youtube",
-          description: `Clon de Youtube utilizando su API, en esta app puedes reproducir cualquier video, buscar canales y su contenido o explorar el feed`,
+          description: `Clon de Youtube utilizando su API, en esta app puedes reproducir cualquier video, explorar el feed o buscar cualquier canal y su contenido`,
           imgUrl: projImg2,
           link: "https://freddy-youtube.netlify.app",
           repository: "https://github.com/freddy-alfonzo/youtube",
@@ -79,7 +79,7 @@ export function Projects({ language }) {
         {
           title: "Aplicación del Clima",
           description:
-            "Aplicación que accede a tu ubicación o te permite buscar en cualquier parte del mundo",
+            "Aplicación que accede a tu ubicación o te permite buscar en cualquier parte del mundo, te da un pronóstico del clima de 5 días, humedad, fuerza del viento y más",
           imgUrl: projImg4,
           link: "https://freddy-weather.netlify.app",
           repository: "https://github.com/freddy-alfonzo/weather-app",

@@ -53,7 +53,7 @@ export function Projects({ language }) {
         {
           title: "Página a empresa VPN",
           description:
-            "Pagina moderna para una compañia que ofrece servicios VPN y busca promocionarse",
+            "Pagina moderna para una compañía que ofrece servicios VPN y busca promocionarse",
           imgUrl: projImg1,
           link: "https://xayavpn.netlify.app",
           repository: "https://github.com/freddy-alfonzo/vpn-landing-page",

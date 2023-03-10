@@ -70,7 +70,7 @@ export function Projects({ language }) {
         {
           title: "TrailerAddict App",
           description:
-            "Aplicación donde puedes encontrar todas las películas o series con su trailer,  su descripcion y la fecha de estreno utilizando el API de TMDB",
+            "Aplicación donde puedes encontrar todas las películas o series con su trailer,  su descripción y la fecha de estreno utilizando el API de TMDB",
           imgUrl: projImg3,
           link: "https://trailer-addict.netlify.app",
           repository: "https://github.com/freddy-alfonzo/trailer-addict",

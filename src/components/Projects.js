@@ -1,10 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg from "../assets/img/project-img.jpg";
 import projImg1 from "../assets/img/project-img1.jpg";
 import projImg2 from "../assets/img/project-img2.png"
 import projImg3 from "../assets/img/project-img3.jpg";
 import projImg4 from "../assets/img/project-img4.jpg";
+import projImg5 from "../assets/img/project-img5.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export function Projects({ language }) {
@@ -47,13 +48,23 @@ export function Projects({ language }) {
           repository: "https://github.com/freddy-alfonzo/weather-app",
           target: "_blank",
         },
+        {
+          title: "Rick & Morty App",
+          description:
+            "App with characters, episodes and locations page with pagination system, filters that can be applied simultaneously, posibility of adding to favorites, favorites will be saved on LocalStorage, etc",
+          imgUrl: projImg5,
+          link: "https://rickandmorty-freddy.netlify.app",
+          repository: "https://github.com/freddy-alfonzo/pickle-rick",
+          target: "_blank",
+          className: "center mt-1"
+        },
       ];
     } else {
       return [
         {
           title: "Página a empresa VPN",
           description:
-            "Pagina moderna para una compañía que ofrece servicios VPN y busca promocionarse",
+            "Página moderna para una compañía que ofrece servicios VPN y busca promocionarse",
           imgUrl: projImg1,
           link: "https://xayavpn.netlify.app",
           repository: "https://github.com/freddy-alfonzo/vpn-landing-page",
@@ -85,6 +96,16 @@ export function Projects({ language }) {
           repository: "https://github.com/freddy-alfonzo/weather-app",
           target: "_blank",
         },
+        {
+          title: "Rick & Morty App",
+          description:
+            "Aplicación que posee página de personajes, episodios y lugares con sistema de paginación, filtros que pueden aplicar simultáneamente, posibilidad de añadir a favoritos desde cualquier lugar de la página, etc",
+          imgUrl: projImg5,
+          link: "https://rickandmorty-freddy.netlify.app",
+          repository: "https://github.com/freddy-alfonzo/pickle-rick",
+          target: "_blank",
+          className: "center mt-1"
+        },
       ];
     }
   };
@@ -94,7 +115,7 @@ export function Projects({ language }) {
     <section className="project" id="projects">
       <img className="background-image-right" src={colorSharp2} alt="bgimg2" />
       <Container>
-        <Row>
+        <Row className="d-flex justify-content-center">
           <Col size={12} sm={12}>
             <h2>{language === "english" ? "Projects" : "Proyectos"}</h2>
             <p>

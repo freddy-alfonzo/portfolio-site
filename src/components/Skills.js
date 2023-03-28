@@ -8,6 +8,8 @@ import css3 from "../assets/img/css3.svg";
 import sass from "../assets/img/sass2.svg";
 import react from "../assets/img/react.svg";
 import javascript from "../assets/img/javascript.svg";
+import typescript from "../assets/img/typescript.svg"
+import next from "../assets/img/next.png"
 import bootstrap from "../assets/img/bootstrap.svg";
 import tailwind from "../assets/img/tailwind.png";
 import git from "../assets/img/git.svg";
@@ -71,12 +73,20 @@ export function Skills({ language }) {
                   <h5> Javascript</h5>
                 </div>
                 <div className="item">
+                  <img src={typescript} alt="typescript svg"></img>
+                  <h5> Typescript</h5>
+                </div>
+                <div className="item">
                   <img src={react} alt="react svg"></img>
                   <h5>React</h5>
                 </div>
                 <div className="item">
                   <img src={redux} alt="redux svg"></img>
                   <h5>Redux Toolkit</h5>
+                </div>
+                <div className="item">
+                  <img src={next} alt="next png" style={{width:"56%"}}></img>
+                  <h5 style={{marginTop:"-6%" }}> NextJS</h5>
                 </div>
                 <div className="item">
                   <img src={bootstrap} alt="bootstrap svg"></img>
@@ -90,7 +100,7 @@ export function Skills({ language }) {
                   <img src={git} alt="git svg"></img>
                   <h5> GIT</h5>
                 </div>
-                              </Carousel>
+              </Carousel>
             </div>
           </Col>
         </Row>

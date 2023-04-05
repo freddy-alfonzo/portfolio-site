@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png"
 import projImg3 from "../assets/img/project-img3.jpg";
 import projImg4 from "../assets/img/project-img4.jpg";
 import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
@@ -56,8 +57,18 @@ export function Projects({ language }) {
           link: "https://rickandmorty-freddy.netlify.app",
           repository: "https://github.com/freddy-alfonzo/pickle-rick",
           target: "_blank",
-          className: "center mt-1"
+          
         },
+        {
+          title: "Tech Ecommerce",
+          description:
+            "Fullstack Ecommerce made with Next JS and Sanity. It have all the features of a modern ecommerce with payment options included using stripe",
+          imgUrl: projImg6,
+          link: "https://freddy-ecommerce.vercel.app",
+          repository: "https://github.com/freddy-alfonzo/tech-ecommerce",
+          target: "_blank",
+         
+        }
       ];
     } else {
       return [
@@ -104,8 +115,18 @@ export function Projects({ language }) {
           link: "https://rickandmorty-freddy.netlify.app",
           repository: "https://github.com/freddy-alfonzo/pickle-rick",
           target: "_blank",
-          className: "center mt-1"
+         
         },
+        {
+          title: "Tech Ecommerce",
+          description:
+            "Ecommerce fullstack construido con NextJS y Sanity. Tiene todas las funcionalidades de un ecommerce moderno incluyendo carrito de compras y metodos de pago utilizando Stripe",
+          imgUrl: projImg6,
+          link: "https://freddy-ecommerce.vercel.app",
+          repository: "https://github.com/freddy-alfonzo/tech-ecommerce",
+          target: "_blank",
+         
+        }
       ];
     }
   };
@@ -117,12 +138,8 @@ export function Projects({ language }) {
       <Container>
         <Row className="d-flex justify-content-center">
           <Col size={12} sm={12}>
-            <h2>{language === "english" ? "Projects" : "Proyectos"}</h2>
-            <p>
-              {language === "english"
-                ? "I made these frontend projects using technologies as ReactJS, Redux, a preprocessor as SASS and CSS frameworks such as Tailwind or Bootstrap"
-                : "Hice estos proyectos frontend con tecnologías como ReactJS, Redux, un preprocesador como SASS y frameworks de CSS como Tailwind o Bootstrap"}
-            </p>
+            <h2 className="mb-4">{language === "english" ? "Projects" : "Proyectos"}</h2>
+
           </Col>
 
           {projects.map((project, index) => {

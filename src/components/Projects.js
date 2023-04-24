@@ -62,7 +62,7 @@ export function Projects({ language }) {
         {
           title: "Tech Ecommerce",
           description:
-            "Fullstack Ecommerce made with Next JS and Sanity. It have all the features of a modern ecommerce with payment options included using stripe",
+            "Fullstack ecommerce made with Next JS and Sanity. It have all the features of a modern ecommerce with payment options included using stripe",
           imgUrl: projImg6,
           link: "https://freddy-ecommerce.vercel.app",
           repository: "https://github.com/freddy-alfonzo/tech-ecommerce",

@@ -21,8 +21,8 @@ export function Banner({ language }) {
 
   const tick = () => {
     const setFullText = () => {
-      if (language === "english") return "Frontend Web Developer";
-      else return "Desarrolador Web Frontend";
+      if (language === "english") return "Fullstack Javascript Developer";
+      else return "Desarrolador Fullstack Javascript";
     };
     let fullText = setFullText();
     let updatedText = isDeleting
@@ -63,8 +63,8 @@ export function Banner({ language }) {
 
               <p>
                 {language === "english"
-                  ? "I am a self-taught React frontend developer interested in working full remotely offering my services. Looking to improve myself, learn new technologies every day and get more experience in the IT world. Currently focusing on javascript backend technologies to become a fullstack developer. After learning those technologies i will start making some personal fullstack projects to put on this portfolio."
-                  : "Soy un programador frontend autodidácta (React.js) con intereses en trabajar ofreciendo mis servicios de forma remota. En busca de mejorar como desarrollador, aprender nuevas tecnologías cada día y obtener experiencia en el mundo tecnológico. Actualmente estoy enfocado en aprender tecnologias backend de javascript para convertirme en un desarrollador fullstack. Luego de aprender dichas tecnologías construiré proyectos personales fullstack que pondré en este portafolio."}
+                  ? "I am a Fullstack Javascript Developer with experience in leading projects and collaborating with teams to ensure robust and high-quality solutions within the requested timeframe. I am patient, proactive, and communicative, enabling me to effectively work within multidisciplinary teams and meet the deadlines required by the company or client. I am eager to join a dynamic team and contribute with my skills and experience"
+                  : "Soy un desarrollador Fullstack (Javascript) con experiencia en liderar proyectos y trabajar en equipo para garantizar soluciones sólidas y de alta calidad en el tiempo límite solicitado. Soy paciente, proactivo y comunicativo, lo que me permite colaborar eficazmente en equipos multidisciplinarios y cumplir con los plazos requeridos por la empresa o cliente. Estoy entusiasmado por unirme a un equipo dinámico y contribuir con mis habilidades y experiencia"}
               </p>
             </article>
           </Col>

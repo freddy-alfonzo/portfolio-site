@@ -14,6 +14,15 @@ import bootstrap from "../assets/img/bootstrap.svg";
 import tailwind from "../assets/img/tailwind.png";
 import git from "../assets/img/git.svg";
 import redux from "../assets/img/redux.svg";
+import reactNative from "../assets/img/reactnative.svg";
+import electron from "../assets/img/electron.svg";
+import nodejs from "../assets/img/nodejs2.svg";
+import express from "../assets/img/express.svg";
+import mongodb from "../assets/img/mongodb.svg";
+import mysql from "../assets/img/mysql.svg";
+import graphql from "../assets/img/graphql.svg";
+import jest1 from "../assets/img/jest.svg";
+import cypress from "../assets/img/cypress.svg";
 
 export function Skills({ language }) {
   const responsive = {
@@ -47,8 +56,8 @@ export function Skills({ language }) {
               <h2>{language === "english" ? "Skills" : "Tecnologías"}</h2>
               <p>
                 {language === "english"
-                  ? "These are the technologies i have experience with and the ones that i used on my projects/portfolio"
-                  : "Estas son las tecnologías con las que tengo experiencia y he usado en mis proyectos/portafolio"}
+                  ? "These are the technologies i have laboral experience with and used on my projects/portfolio"
+                  : "Estas son las tecnologías con las que tengo experiencia laboral y he usado en mis proyectos/portafolio"}
               </p>
               <Carousel
                 responsive={responsive}
@@ -81,6 +90,14 @@ export function Skills({ language }) {
                   <h5>React</h5>
                 </div>
                 <div className="item">
+                  <img src={reactNative} alt="react svg"></img>
+                  <h5>React Native</h5>
+                </div>
+                <div className="item">
+                  <img src={electron} alt="react svg"></img>
+                  <h5>Electron</h5>
+                </div>
+                <div className="item">
                   <img src={redux} alt="redux svg"></img>
                   <h5>Redux Toolkit</h5>
                 </div>
@@ -99,6 +116,34 @@ export function Skills({ language }) {
                 <div className="item">
                   <img src={git} alt="git svg"></img>
                   <h5> GIT</h5>
+                </div>
+                <div className="item">
+                  <img src={nodejs} alt="git svg"></img>
+                  <h5> NodeJS</h5>
+                </div>
+                <div className="item">
+                  <img src={express} alt="git svg"></img>
+                  <h5> Express</h5>
+                </div>
+                <div className="item">
+                  <img src={mongodb} alt="git svg"></img>
+                  <h5> MongoDB</h5>
+                </div>
+                <div className="item">
+                  <img src={mysql} alt="git svg"></img>
+                  <h5> MySQL</h5>
+                </div>
+                <div className="item">
+                  <img src={graphql} alt="git svg"></img>
+                  <h5>GraphQL</h5>
+                </div>
+                <div className="item">
+                  <img src={jest1} alt="git svg"></img>
+                  <h5>Jest</h5>
+                </div>
+                <div className="item">
+                  <img src={cypress} alt="git svg"></img>
+                  <h5>Cypress</h5>
                 </div>
               </Carousel>
             </div>

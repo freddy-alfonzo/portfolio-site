@@ -22,7 +22,7 @@ export function Banner({ language }) {
   const tick = () => {
     const setFullText = () => {
       if (language === "english") return "Fullstack Javascript Developer";
-      else return "Desarrolador Fullstack Javascript";
+      else return "Desarrollador Fullstack Javascript";
     };
     let fullText = setFullText();
     let updatedText = isDeleting

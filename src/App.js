@@ -19,7 +19,7 @@ function App() {
         <Projects language={language}/>
         <Contact language={language}/>
       </main>
-      <Footer/>
+      <Footer language={language}/>
     </>
   );
 }

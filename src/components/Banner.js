@@ -63,8 +63,8 @@ export function Banner({ language }) {
 
               <p>
                 {language === "english"
-                  ? "I am a Fullstack Javascript Developer with experience in leading projects and collaborating with teams to ensure robust and high-quality solutions within the requested timeframe. I am patient, proactive, and communicative, enabling me to effectively work within multidisciplinary teams and meet the deadlines required by the company or client. I am eager to join a dynamic team and contribute with my skills and experience"
-                  : "Soy un desarrollador Fullstack (Javascript) con experiencia en liderar proyectos y trabajar en equipo para garantizar soluciones sólidas y de alta calidad en el tiempo límite solicitado. Soy paciente, proactivo y comunicativo, lo que me permite colaborar eficazmente en equipos multidisciplinarios y cumplir con los plazos requeridos por la empresa o cliente. Estoy entusiasmado por unirme a un equipo dinámico y contribuir con mis habilidades y experiencia"}
+                  ? "I am a Fullstack Javascript Developer with experience in leading projects and collaborating with teams to ensure robust and high-quality solutions within the requested timeframe. I am patient, proactive, and communicative, enabling me to effectively work within multidisciplinary teams and meet the deadlines required by the company or client. I am eager to join a dynamic team and contribute the company with my skills and experience."
+                  : "Soy un desarrollador Fullstack (Javascript) con experiencia en liderar proyectos y trabajar en equipo para garantizar soluciones sólidas y de alta calidad en el tiempo límite solicitado. Soy paciente, proactivo y comunicativo, lo que me permite colaborar eficazmente en equipos multidisciplinarios y cumplir con los plazos requeridos por la empresa o cliente. Estoy entusiasmado por unirme a un equipo dinámico y contribuir a la empresa con mis habilidades y experiencia."}
               </p>
             </article>
           </Col>

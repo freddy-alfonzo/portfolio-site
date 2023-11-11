@@ -1,11 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.jpg";
-import projImg2 from "../assets/img/project-img2.png"
+import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.jpg";
 import projImg4 from "../assets/img/project-img4.jpg";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
@@ -57,7 +58,6 @@ export function Projects({ language }) {
           link: "https://rickandmorty-freddy.netlify.app",
           repository: "https://github.com/freddy-alfonzo/pickle-rick",
           target: "_blank",
-          
         },
         {
           title: "Tech Ecommerce",
@@ -67,8 +67,16 @@ export function Projects({ language }) {
           link: "https://freddy-ecommerce.vercel.app",
           repository: "https://github.com/freddy-alfonzo/tech-ecommerce",
           target: "_blank",
-         
-        }
+        },
+        {
+          title: "Task APP",
+          description:
+            "Fullstack task app that allows you to CRUD (Create, Read, Update and Delete) tasks. Fully responsive, jwt authentication, protected routes, mongodb, reactjs, nodejs, express, etc",
+          imgUrl: projImg7,
+          link: "https://github.com/freddy-alfonzo/Task-App",
+          repository: "https://github.com/freddy-alfonzo/Task-App",
+          target: "_blank",
+        },
       ];
     } else {
       return [
@@ -115,7 +123,6 @@ export function Projects({ language }) {
           link: "https://rickandmorty-freddy.netlify.app",
           repository: "https://github.com/freddy-alfonzo/pickle-rick",
           target: "_blank",
-         
         },
         {
           title: "Tech Ecommerce",
@@ -125,8 +132,17 @@ export function Projects({ language }) {
           link: "https://freddy-ecommerce.vercel.app",
           repository: "https://github.com/freddy-alfonzo/tech-ecommerce",
           target: "_blank",
-         
-        }
+        },
+        {
+          title: "Task APP",
+          description:
+            "Aplicación de tareas Fullstack que te permite crear, leer, actualizar y eliminar tareas. La app es completamente responsive, con autenticación jwt, rutas protegidas, mongodb, nodejs, express, etc",
+
+          imgUrl: projImg7,
+          link: "https://github.com/freddy-alfonzo/Task-App",
+          repository: "https://github.com/freddy-alfonzo/Task-App",
+          target: "_blank",
+        },
       ];
     }
   };
@@ -138,8 +154,9 @@ export function Projects({ language }) {
       <Container>
         <Row className="d-flex justify-content-center">
           <Col size={12} sm={12}>
-            <h2 className="mb-4">{language === "english" ? "Projects" : "Proyectos"}</h2>
-
+            <h2 className="mb-4">
+              {language === "english" ? "Projects" : "Proyectos"}
+            </h2>
           </Col>
 
           {projects.map((project, index) => {

@@ -3,8 +3,8 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import navIcon4 from "../assets/img/nav-icon4.svg";
-import spanishCV from "../assets/img/spanishCV.pdf"
-import englishCV from "../assets/img/englishCV.pdf"
+import spanishCV from "../assets/img/FreddyAlfonzoCV.pdf"
+import englishCV from "../assets/img/CVFreddyAlfonzo.pdf"
 
 
 export const Footer = ({ language }) => {
@@ -51,7 +51,7 @@ export const Footer = ({ language }) => {
               </a>
               <a
                 href={language === "english" ? englishCV : spanishCV}
-                download={language === "english" ? "Download resume" : "Descargar CV"}
+                download={language === "english" ? "Freddy Alfonzo resume" : "Freddy Alfonzo CV"}
                 title={language === "english" ? "Download resume" : "Descargar CV"}
               >
                 <img src={navIcon4} alt="email-icon" />
